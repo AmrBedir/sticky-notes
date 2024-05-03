@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Notes</title>
+</head>
+<body>
+  <h1>All Notes</h1>
+  <ul>
+    <% notes.forEach(note => { %>
+      <li><%= note.content %></li>
+    <% }) %>
+  </ul>
+  <a href="/new-note">Add a New Note</a>
+</body>
+</html>
